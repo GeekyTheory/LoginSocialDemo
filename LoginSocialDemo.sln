@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoginSocialDemo", "LoginSocialDemo", "{D3BD8A31-A2B0-443E-9F47-473C73685EAF}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LoginSocialDemo.Shared", "LoginSocialDemo\LoginSocialDemo.Shared\LoginSocialDemo.Shared.shproj", "{0CCB02D4-5CC3-447C-8633-0C2696145A0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginSocialDemo.Windows", "LoginSocialDemo\LoginSocialDemo.Windows\LoginSocialDemo.Windows.csproj", "{4150E702-5E43-4C83-9B5B-2DB1168E66D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginSocialDemo.WindowsPhone", "LoginSocialDemo\LoginSocialDemo.WindowsPhone\LoginSocialDemo.WindowsPhone.csproj", "{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		LoginSocialDemo\LoginSocialDemo.Shared\LoginSocialDemo.Shared.projitems*{58c4eb65-65f4-4b91-83f8-b94dbf7d3954}*SharedItemsImports = 4
+		LoginSocialDemo\LoginSocialDemo.Shared\LoginSocialDemo.Shared.projitems*{4150e702-5e43-4c83-9b5b-2db1168e66d3}*SharedItemsImports = 4
+		LoginSocialDemo\LoginSocialDemo.Shared\LoginSocialDemo.Shared.projitems*{0ccb02d4-5cc3-447c-8633-0c2696145a0e}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|ARM.Build.0 = Debug|ARM
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|ARM.Deploy.0 = Debug|ARM
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|x64.ActiveCfg = Debug|x64
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|x64.Build.0 = Debug|x64
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|x64.Deploy.0 = Debug|x64
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|x86.ActiveCfg = Debug|x86
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|x86.Build.0 = Debug|x86
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Debug|x86.Deploy.0 = Debug|x86
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|ARM.ActiveCfg = Release|ARM
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|ARM.Build.0 = Release|ARM
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|ARM.Deploy.0 = Release|ARM
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|x64.ActiveCfg = Release|x64
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|x64.Build.0 = Release|x64
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|x64.Deploy.0 = Release|x64
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|x86.ActiveCfg = Release|x86
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|x86.Build.0 = Release|x86
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3}.Release|x86.Deploy.0 = Release|x86
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|ARM.ActiveCfg = Debug|ARM
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|ARM.Build.0 = Debug|ARM
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|ARM.Deploy.0 = Debug|ARM
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|x86.ActiveCfg = Debug|x86
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|x86.Build.0 = Debug|x86
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Debug|x86.Deploy.0 = Debug|x86
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|ARM.ActiveCfg = Release|ARM
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|ARM.Build.0 = Release|ARM
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|ARM.Deploy.0 = Release|ARM
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|x64.ActiveCfg = Release|Any CPU
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|x86.ActiveCfg = Release|x86
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|x86.Build.0 = Release|x86
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CCB02D4-5CC3-447C-8633-0C2696145A0E} = {D3BD8A31-A2B0-443E-9F47-473C73685EAF}
+		{4150E702-5E43-4C83-9B5B-2DB1168E66D3} = {D3BD8A31-A2B0-443E-9F47-473C73685EAF}
+		{58C4EB65-65F4-4B91-83F8-B94DBF7D3954} = {D3BD8A31-A2B0-443E-9F47-473C73685EAF}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dachibox.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = LoginSocialDemo\\LoginSocialDemo.Shared\\LoginSocialDemo.Shared.shproj
+		SccProjectTopLevelParentUniqueName0 = LoginSocialDemo.sln
+		SccProjectName0 = LoginSocialDemo/LoginSocialDemo.Shared
+		SccLocalPath0 = LoginSocialDemo\\LoginSocialDemo.Shared
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = LoginSocialDemo\\LoginSocialDemo.Shared\\LoginSocialDemo.Shared.projitems
+		SccProjectName2 = LoginSocialDemo/LoginSocialDemo.Shared
+		SccLocalPath2 = LoginSocialDemo\\LoginSocialDemo.Shared
+		SccProjectUniqueName3 = LoginSocialDemo\\LoginSocialDemo.Windows\\LoginSocialDemo.Windows.csproj
+		SccProjectTopLevelParentUniqueName3 = LoginSocialDemo.sln
+		SccProjectName3 = LoginSocialDemo/LoginSocialDemo.Windows
+		SccLocalPath3 = LoginSocialDemo\\LoginSocialDemo.Windows
+		SccProjectUniqueName4 = LoginSocialDemo\\LoginSocialDemo.WindowsPhone\\LoginSocialDemo.WindowsPhone.csproj
+		SccProjectTopLevelParentUniqueName4 = LoginSocialDemo.sln
+		SccProjectName4 = LoginSocialDemo/LoginSocialDemo.WindowsPhone
+		SccLocalPath4 = LoginSocialDemo\\LoginSocialDemo.WindowsPhone
+	EndGlobalSection
+EndGlobal

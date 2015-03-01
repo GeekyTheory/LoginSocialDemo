@@ -1,0 +1,57 @@
+﻿<base:PageBase
+    x:Class="LoginSocialDemo.Views.LogInView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LoginSocialDemo.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:conv="using:LoginSocialDemo.Converters"
+    xmlns:converter="using:Cimbalino.Toolkit.Converters"
+    xmlns:base="using:LoginSocialDemo.ViewModels.Base"
+    DataContext="{Binding LogInViewModel, Source={StaticResource Locator}}"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <base:PageBase.Resources>
+        <converter:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"></converter:BooleanToVisibilityConverter>
+        <conv:BooleanToBrushConverter x:Key="BooleanToBrush"></conv:BooleanToBrushConverter>
+        <conv:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibility"></conv:InverseBooleanToVisibilityConverter>
+    </base:PageBase.Resources>
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="LogIn Social Demo" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Log In" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <StackPanel Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="34"
+                    Content="Facebook" Command="{Binding LogInCommand}" Background="{Binding IsFacebookConnected, Converter={StaticResource BooleanToBrush}, ConverterParameter=facebook}"
+                    CommandParameter="facebook">
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="34"
+                    Content="Google" Command="{Binding LogInCommand}" Background="{Binding IsGoogleConnected, Converter={StaticResource BooleanToBrush}, ConverterParameter=google}"
+                    CommandParameter="google">
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="34"
+                    Content="Microsoft" Command="{Binding LogInCommand}" Background="{Binding IsMicrosoftConnected, Converter={StaticResource BooleanToBrush}, ConverterParameter=microsoft}"
+                    CommandParameter="microsoft" >
+            </Button>
+        </StackPanel>
+        <ProgressRing Grid.Row="0" Grid.RowSpan="2" IsEnabled="True" Visibility="{Binding InProgress, Converter={StaticResource BooleanToVisibilityConverter}}"></ProgressRing>
+    </Grid>
+</base:PageBase>
